@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
 import Navbar from "./components/layouts/Navbar";
-
+import Footer from "./components/layouts/Footer";
 function App() {
   return (
     <Router>
@@ -9,6 +9,7 @@ function App() {
         <Navbar />
 
         <main>Content</main>
+        <Footer />
       </div>
     </Router>
   );
