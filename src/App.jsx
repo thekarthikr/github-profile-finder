@@ -8,6 +8,7 @@ import Footer from "./components/layouts/Footer";
 import { GithubProvider } from "./components/context/github/GithubContext";
 import { AlertProvider } from "./components/context/alert/AlertContext";
 import Alert from "./components/layouts/Alert";
+import User from "./pages/User";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
               <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
-                <Route path='/*' element={<NotFound />} />
+                <Route path='/user/:login' element={<User />} />
+                <Route path='/notfound' element={<NotFound />} />
               </Routes>
             </main>
             <Footer />
